@@ -8,8 +8,8 @@ A set of utilities for interacting with Twilio from within Django.  See examples
     $ sudo python setup.py install
 
 ### Dependencies
-[simplejson](http://www.undefined.org/python/)
-[Official Twilio API](http://github.com/twilio/twilio-python)
+[simplejson](http://www.undefined.org/python/)  
+[Official Twilio API](http://github.com/twilio/twilio-python)  
 [twiliosimple](http://github.com/bnmrrs/twiliosimple)
 
 ### License
