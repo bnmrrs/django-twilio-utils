@@ -40,5 +40,5 @@ distutils.core.setup(
     author_email="ben@bnmrrs.com",
     url="http://www.github.com/bnmrrs/django-twilio-utils",
     license="http://www.opensource.org/licenses/mit-license.php",
-    description="A set of utilities for interacting with Twilio from within Django ",
+    description="A set of utilities for interacting with Twilio from within Django",
 )
