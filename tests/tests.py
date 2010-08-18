@@ -1,8 +1,8 @@
 import unittest
 from django.http import HttpResponse, HttpRequest
-from django_twilio_utils import decorators
+from django_twilio_utils.decorators import twilio_request
 
-@decorators.twilio_request(api_key='test', api_token='test')
+@twilio_request(api_key='test', api_token='test')
 def view_func(request):
 	return HttpResponse(status=200)
 
