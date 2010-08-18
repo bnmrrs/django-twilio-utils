@@ -1,4 +1,4 @@
-# twilio_request
+# twilio_request decorator
 
 ## Overview
 twilio_request is a decorator for validating Twilio callback requests.  It takes your API key and API token and validates that the request did indeed come from Twilio.  If not it returns a 400 HTTP status.
