@@ -19,9 +19,11 @@ If you don't want to provide your api\_key and api\_token with every view using 
 <pre><code># settings.py
 
 TWILIO_ACCOUNT_SID = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-TWILIO_ACCOUNT_TOKEN = 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy'
+TWILIO_ACCOUNT_TOKEN = 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy'</code></pre>
 
-# views.py
+and then leave it out of your decorator in views.py
+
+<pre><code># views.py
 
 from django_twilio_utils.decorators import twilio_request
 
