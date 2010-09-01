@@ -24,11 +24,17 @@ class TwilioRequestDecoratorTest(TestCase):
 class TwilioResponseTest(TestCase):
 	def test_basic_usage(self):
 		r = TwilioResponse()
-
 		self.failUnlessEqual(str(r), 
 """Content-Type: application/xml
 
 <?xml version='1.0'?><Response></Response>""")
 
-def test_complex(self):
+		r = TwilioResponse().say('hello')
+		self.failUnlessEqual(str(r),
+"""Content-Type: application/xml
+
+<?xml version='1.0'?><Response><Say voice='woman' loop='0' language='en'>hello</Say></Response>""")
+
+
+def test_nested(self):
 	pass
