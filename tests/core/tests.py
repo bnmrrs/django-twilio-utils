@@ -9,6 +9,7 @@ def view_func(request):
 
 class TwilioRequestDecoratorTest(TestCase):
 	def test_valid(self):
+		# Need to actually create a request that passes here..
 		request = HttpRequest()
 		request.method = 'POST'
 		response = view_func(request)
