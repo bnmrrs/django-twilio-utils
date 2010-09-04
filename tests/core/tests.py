@@ -14,6 +14,8 @@ class TwilioRequestDecoratorTest(TestCase):
 		response = view_func(request)
 		
 		self.failUnlessEqual(response.status_code, 200)
+		
+		
 	def test_invalid(self):
 		request = HttpRequest()
 		request.method = 'POST'
